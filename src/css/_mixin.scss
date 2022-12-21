@@ -5,3 +5,8 @@
     justify-content: $justifyContent;
     align-items: $alignItems;
 }
+
+@mixin btn($border) {
+    padding: 10px 20px;
+    border: $border;
+}
