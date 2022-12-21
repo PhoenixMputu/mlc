@@ -1,0 +1,45 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'mixin.scss';
+
+section {
+    background-image: linear-gradient(transparent,rgb(0, 0, 255, 0.5)),
+                  url("../assets/hero.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 88vh;
+    position: relative;
+
+    div {
+        position: absolute;
+        top: 50%;
+        padding: 0 70px;
+        color: $white;
+        transform: translate(0, -50%);
+
+        h1 {
+            font-family: $montserrat;
+            font-size: 28px;
+            width: 350px;
+            margin-bottom: 2rem;
+
+            span {
+                color: $light-yellow;
+            }
+        }
+
+        p {
+            width: 450px;
+            font-family: $inter;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            padding: 10px 20px;
+            background-color: $light-yellow;
+            color: $ford-blue;
+            font-weight: 700;
+            font-family: $inter;
+        }
+    }
+}

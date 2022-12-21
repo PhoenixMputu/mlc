@@ -16,10 +16,10 @@ const Navbar = () => {
                 <label htmlFor='checkbox'><AiOutlineMenu color='red' size={30}/></label>
                 <ul>
                     <li>
-                        <Link>Accueil</Link>
+                        <Link to="/">Accueil</Link>
                     </li>
                     <li>
-                        <Link>Actualités</Link>
+                        <Link to="/actualities">Actualités</Link>
                     </li>
                     <li>
                         <Link>Activités</Link>
