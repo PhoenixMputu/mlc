@@ -1,0 +1,56 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'mixin.scss';
+
+header {
+    background-color: $ford-blue;
+    height: 70px;
+    @include flexbox(row, wrap, space-between, center);
+
+    nav {
+        margin: 0 70px;
+        width: 100%;
+        @include flexbox(row, wrap, space-between, center);
+        
+        img {
+            height: 50px;
+        }
+
+        div {
+            @include flexbox(row, wrap, space-between, center);
+            gap: 2rem;
+        }
+
+        ul {
+            @include flexbox(row, wrap, space-between, center);
+            gap: 2rem;
+            color: $white;
+            font-family: $inter;
+
+            .btn {
+                padding: 10px 20px;
+            }
+
+            .border {
+                border: 2px solid $light-yellow;
+            }
+
+            .btn-primary {
+                background-color: $ford-blue;
+
+                a {
+                    color: $light-yellow;
+                }
+            }
+
+            .btn-yellow {
+                background-color: $light-yellow;
+                color: $ford-blue;
+            }
+        }
+
+        input, label {
+            display: none;
+        }
+    }
+}
