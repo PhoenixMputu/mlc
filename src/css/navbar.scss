@@ -28,7 +28,7 @@ header {
     nav {
         display: inline;
         float: right;
-        padding-top: 30px;
+        margin-top: 20px;
 
         ul {
             @include flexbox(row, wrap, space-between, center);
