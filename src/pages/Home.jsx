@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import bemba from '../assets/bemba.jpg'
 import Card from '../components/Card'
 import CardActuality from '../components/CardActuality'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -43,6 +44,7 @@ const Home = () => {
         </div>
       </div>
     </main>
+    <Footer/>
     </>
   )
 }

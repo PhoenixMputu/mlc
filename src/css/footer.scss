@@ -1,0 +1,119 @@
+@import 'colors';
+@import 'fonts';
+@import 'mixin';
+
+footer {
+    background-color: $ford-blue;
+    padding: 3rem 70px;
+    @include flexbox(row, wrap, space-between, flex-start);
+    color: $white;
+
+    div {
+        width: 25%;
+    }
+
+    .logo {
+        font-family: $inter;
+
+        img {
+            height: 70px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        div {
+            @include flexbox(row, wrap, space-between, center);
+            width: 100%;
+
+            .btn-primary {
+                @include btn(2px solid $light-yellow);
+                padding: 5px 10px;
+            }
+
+            .btn-yellow {
+                @include btn(2px solid $ford-blue);
+                padding: 7px 10px;
+                background-color: $light-yellow;
+                color: $ford-blue;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .menu {
+        h3 {
+            font-family: $montserrat;
+            margin-bottom: 70px;
+        }
+
+        ul {
+            font-family: $inter;
+            width: 100%;
+
+            li {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    .contacts {
+        h3 {
+            font-family: $montserrat;
+            margin-bottom: 70px;
+        }
+
+        ul {
+            font-family: $inter;
+
+            li {
+                display: inline-block;
+                margin-bottom: 2rem;
+                align-items: baseline;
+                align-self: baseline;
+                align-content: center;
+
+                svg.icon {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        div {
+            @include flexbox(row, wrap, flex-start, center);
+            width: 100%;
+            gap: 1rem;
+
+            .link {
+                padding: 1px 2px;
+                border: 2px solid $white;
+                border-radius: 50%;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 3rem 20px;
+        .logo, .menu, .contacts {
+            width: 100%;
+
+            h3 {
+                margin-top: 3rem;
+                margin-bottom: 20px;
+            }
+
+            ul {
+                li {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
