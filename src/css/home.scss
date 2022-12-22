@@ -113,4 +113,17 @@ main {
             }
         }
     }
+
+    main {
+        padding: 3rem 20px;
+
+        .row {
+            img {
+                margin-bottom: 2rem;
+            }
+            img, div {
+                width: 100%;
+            }
+        }
+    }
 }
