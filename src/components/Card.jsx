@@ -3,9 +3,9 @@ import '../css/card.scss';
 import { GrLocation, GrFormCalendar } from "react-icons/gr";
 import { BiTime } from "react-icons/bi";
 
-const Card = ({image, title, place, date, hour}) => {
+const Card = ({image, title, place, date, hour, key}) => {
   return (
-    <div className="card">
+    <div className="card" key={key}>
         <img src={image} alt={title} className="card-image"/>
         <h3 className="card-title">{title}</h3>
         <div className="card-footer">
