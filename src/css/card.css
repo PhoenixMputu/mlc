@@ -1,0 +1,78 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  width: 30%;
+  margin: 2rem 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  cursor: pointer;
+}
+.card img {
+  max-width: 100%;
+  min-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: auto;
+}
+.card h3 {
+  text-align: start !important;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 500;
+}
+.card .description {
+  text-align: start !important;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card button {
+  padding: 10px 20px;
+  border: 2px solid #0000FF;
+  margin-left: 20px;
+  padding: 5px 10px;
+  background-color: #FFFFFF;
+  color: #0000FF;
+  margin-bottom: 20px;
+}
+.card .card-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 16px;
+  font-family: "Inter";
+}
+.card .card-footer div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .card {
+    width: 100%;
+  }
+}/*# sourceMappingURL=card.css.map */
