@@ -46,8 +46,9 @@ section {
 }
 
 main {
-    padding: 3rem 70px;
+    padding: 0 70px;
     .row {
+        padding: 3rem 0;
         @include flexbox(row, wrap, space-between, center);
 
         img, div {
