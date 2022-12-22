@@ -14,6 +14,12 @@ const Home = () => {
             <Link>En savoir plus</Link>
         </div>
     </section>
+    <main>
+      <div className="row">
+        <img src="" alt="" />
+        <div></div>
+      </div>
+    </main>
     </>
   )
 }
