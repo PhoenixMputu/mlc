@@ -3,6 +3,7 @@ import '../css/home.scss'
 import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 import bemba from '../assets/bemba.jpg'
+import Card from '../components/Card'
 
 const Home = () => {
   return (
@@ -22,6 +23,15 @@ const Home = () => {
           <h2>Un avenir meilleur pour un Congo meilleur</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu efficitur odio. Phasellus suscipit feugiat dolor, et iaculis massa lacinia consequat.</p>
           <Link>En savoir plus</Link>
+        </div>
+      </div>
+      <div className='container'>
+        <h2>Nos prochaines activités</h2>
+        <div className="flex-row">
+          <Card image={bemba} title="Lorem Ipsum" place="Kinshasa" date="11/11/2000" hour="11h30"/>
+          <Card image={bemba} title="Lorem Ipsum" place="Kinshasa" date="11/11/2000" hour="11h30"/>
+          <Card image={bemba} title="Lorem Ipsum" place="Kinshasa" date="11/11/2000" hour="11h30"/>
+          <Card image={bemba} title="Lorem Ipsum" place="Kinshasa" date="11/11/2000" hour="11h30"/>
         </div>
       </div>
     </main>
