@@ -30,6 +30,29 @@
         font-weight: 500;
     }
 
+    .description {
+        text-align: start !important;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        font-family: $inter;
+        font-size: 14px;
+        font-weight: 400;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    button {
+        @include btn(2px solid $ford-blue);
+        margin-left: 20px;
+        padding: 5px 10px;
+        background-color: $white;
+        color: $ford-blue;
+        margin-bottom: 20px;
+    }
+
     .card-footer {
         width: 100%;
         @include flexbox(row, wrap, space-between, center);

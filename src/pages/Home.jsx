@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import { Link } from 'react-router-dom'
 import bemba from '../assets/bemba.jpg'
 import Card from '../components/Card'
+import CardActuality from '../components/CardActuality'
 
 const Home = () => {
   return (
@@ -31,6 +32,14 @@ const Home = () => {
           <Card key={1} image={bemba} title="Lorem Ipsum" place="Kinshasa" date="11/11/2000" hour="11h30"/>
           <Card key={2} image={bemba} title="Lorem Ipsum" place="Kinshasa" date="11/11/2000" hour="11h30"/>
           <Card key={3} image={bemba} title="Lorem Ipsum" place="Kinshasa" date="11/11/2000" hour="11h30"/>
+        </div>
+      </div>
+      <div className='container'>
+        <h2>Les dernières nouvelles</h2>
+        <div className="flex-row">
+          <CardActuality key={1} image={bemba} title="Lorem Ipsum" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat eos voluptatum nihil ipsum quod, velit saepe ducimus atque dolorum voluptatem quia itaque suscipit eum cupiditate minus, corporis delectus a."/>
+          <CardActuality key={2} image={bemba} title="Lorem Ipsum" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat eos voluptatum nihil ipsum quod, velit saepe ducimus atque dolorum voluptatem quia itaque suscipit eum cupiditate minus, corporis delectus a."/>
+          <CardActuality key={3} image={bemba} title="Lorem Ipsum" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat eos voluptatum nihil ipsum quod, velit saepe ducimus atque dolorum voluptatem quia itaque suscipit eum cupiditate minus, corporis delectus a."/>
         </div>
       </div>
     </main>
