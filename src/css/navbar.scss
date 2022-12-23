@@ -35,8 +35,13 @@ header {
             margin-right: 70px;
             color: $white;
 
+            .active {
+                color: $light-yellow;
+            }
+
             .btn-primary {
                 @include btn(2px solid $light-yellow);
+                color: $light-yellow;
             }
 
             .btn-yellow {
