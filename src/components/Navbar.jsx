@@ -12,11 +12,11 @@ const Navbar = () => {
         <label className="hamb" for="side-menu"><AiOutlineMenu size={30} color="white"/></label>
         <nav className="nav">
             <ul className="menu">
-                <li><Link to="/">Accueil</Link></li>
-                <li><Link to="/">Actualités</Link> </li>
-                <li><Link to="/">Activités</Link></li>
-                <li><Link to="/" className='btn-primary'>Contribuer</Link></li>
-                <li><Link to="/" className="btn-yellow">Nous rejoindre</Link></li>
+                <li><Link to="/" className={window.location.pathname ==="/" ? "active" : "hello"}>Accueil</Link></li>
+                <li><Link to="/news" className={window.location.pathname === "/news" ? "active" : "hello"}>Actualités</Link> </li>
+                <li><Link to="/events" className={window.location.pathname === "/events" ? "active" : "hello"}>Activités</Link></li>
+                <li><Link to="/ac" className='btn-primary'>Contribuer</Link></li>
+                <li><Link to="/ac" className="btn-yellow">Nous rejoindre</Link></li>
             </ul>
         </nav>
     </header>

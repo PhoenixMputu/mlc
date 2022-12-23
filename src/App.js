@@ -1,15 +1,15 @@
-import React from 'react';
-import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
+import React from 'react'
+import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import News from './pages/News'
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/actualities" element={<Navbar />} />
+				<Route path="/news" element={<News />} />
 			</Routes>
 		</BrowserRouter>
 	);

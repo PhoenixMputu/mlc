@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/card.scss';
 
-const Card = ({image, title, description, key}) => {
+const CardActuality = ({image, title, description, key}) => {
   return (
     <div className="card" key={key}>
         <img src={image} alt={title} className="card-image"/>
@@ -12,4 +12,4 @@ const Card = ({image, title, description, key}) => {
   )
 }
 
-export default Card
+export default CardActuality

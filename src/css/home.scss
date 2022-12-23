@@ -29,6 +29,12 @@ section {
             }
         }
 
+        h2 {
+            font-family: $montserrat;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+
         p {
             width: 450px;
             font-family: $inter;
@@ -118,6 +124,11 @@ main {
                 font-size: 28px;
                 width: inherit;
                 padding: 0 40px;
+            }
+
+            h2 {
+                width: inherit;
+                text-align: center;
             }
 
             p {
