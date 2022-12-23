@@ -1,0 +1,25 @@
+@import 'colors';
+@import 'fonts';
+@import 'mixin';
+
+section {
+    position: relative;
+    height: 70vh;
+    div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        h1 {
+            text-align: center;
+            width: inherit;
+        }
+
+        p {
+            width: 60%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+}
