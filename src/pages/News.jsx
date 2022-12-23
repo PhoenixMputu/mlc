@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import bemba from '../assets/bemba.jpg'
 import CardActuality from '../components/CardActuality'
 import Footer from '../components/Footer'
+import '../css/home.scss'
 
 const News = () => {
   return (
