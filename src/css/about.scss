@@ -38,26 +38,220 @@
     }
 }
 
-#main {
+.main {
+    position: initial;
+    width: 100%;
     padding: 0 70px;
-    .flex-row {
-        background: none;
-        @include flexbox(row, wrap, space-between, center);
+    padding-top: 2rem;
 
-        img, div {
+    .flex-row {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        position: relative;
+        position: initial;
+        background: transparent;
+        @include flexbox(row, wrap, space-between, center);
+        height: initial;
+
+        img {
+            position: initial !important;
             width: 40%;
         }
 
         div {
+            position: initial !important;
             width: 40%;
+            transform: none;
 
             h2 {
-                width: initial;
+                width: 100% !important;
+                color: $black !important;
+                font-size: 28px;
+                font-family: $montserrat;
+                font-weight: 600;
             }
 
-            p{
-                width: initial;
+            p {
+                width: 100% !important;
+                margin: 0;
+                height: auto;
+                align-self: center;
+                align-content: center;
+                color: $black;
+                font-family: $inter;
+                font-size: 16px !important;
             }
+        }
+    }
+
+    .container__section {
+        background: none;
+        height: initial;
+
+        h2 {
+            font-family: $montserrat;
+            font-size: 28px !important;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .container__card {
+            margin: 0;
+            padding: 0;
+            position: initial;
+            transform: none;
+            @include flexbox(row, wrap, space-between, center);
+
+            .card {
+                position: initial;
+                transform: none;
+                width: 20% !important;
+                padding: 0;
+                @include flexbox(row, wrap, space-between, center);
+                .card-image {
+                    position: initial;
+                    min-height: 100%;
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    transform: none;
+                }
+                h3 {
+                    color: $black;
+                    width: 100%;
+                    text-align: center !important;
+                    font-family: $montserrat;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .container__card__team {
+            margin: 0;
+            padding: 0;
+            position: initial;
+            transform: none;
+            @include flexbox(row, wrap, space-between, center);
+
+            .card {
+                position: initial;
+                transform: none;
+                width: 20% !important;
+                padding: 0;
+                @include flexbox(row, wrap, space-between, center);
+                .card-image {
+                    position: initial;
+                    min-height: 100%;
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 0;
+                    padding: 0;
+                    transform: none;
+                }
+                h3 {
+                    color: $black;
+                    width: 100%;
+                    text-align: start !important;
+                    font-family: $montserrat;
+                    font-size: 14px;
+                    margin-left: 20px;
+                    font-weight: 700;
+                    margin-bottom: 5px;
+                }
+                h4 {
+                    color: $black;
+                    width: 100%;
+                    text-align: start !important;
+                    font-family: $montserrat;
+                    font-size: 13px;
+                    margin-left: 20px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+.container__contact {
+    background: none;
+    background-color: $light-yellow;
+    height: initial;
+    position: initial;
+    margin: 0;
+    padding: 20px 70px;
+    @include flexbox(row, wrap, space-between, center);
+
+    div {
+        position: initial;
+        transform: none;
+        color: $black;
+        margin: 0;
+        padding: 0;
+        width: 40%;
+        @include flexbox(row, wrap, space-between, center);
+
+        a {
+            width: 30px;
+
+            i {
+                font-size: 26px;
+            }
+        }
+    }
+
+    form {
+        width: 40%;
+        @include flexbox(row, wrap, space-between, center);
+        font-family: $inter;
+        gap: .5rem;
+
+        .message {
+            width: 100% !important;
+            @include flexbox(row, wrap, space-between, center);
+            label {
+                width: 100%;
+            }
+            textarea {
+                width: 100%;
+                border-radius: 5px;
+                outline: none;
+            }
+        }
+
+        .group-input {
+            width: 40% !important;
+            position: initial;
+            transform: none;
+            color: $black;
+            margin: 0;
+            padding: 0;
+            @include flexbox(row, wrap, space-between, center);
+
+            label {
+                width: 100% !important;
+            }
+
+            input {
+                height: 30px;
+                width: 100%;
+                border-radius: 5px;
+                outline: none;
+                border: 1px solid $black;
+            }
+        }
+
+        button {
+            width: 100% !important;
+            height: 40px;
+            background-color: $ford-blue;
+            color: $light-yellow;
+            outline: none;
+            border: none;
+            font-size: 20px;
+            border-radius: 5px;
         }
     }
 }
@@ -88,6 +282,204 @@
                 padding: 0 20px;
                 width: inherit;
                 text-align: center;
+            }
+        }
+    }
+
+    .main {
+        padding: 0 20px;
+        .flex-row {
+            img {
+                width: 100%;
+            }
+
+            div {
+                width: 100%;
+
+                h2 {
+                    text-align: start;
+                    margin-top: 1rem;
+                }
+
+                p {
+                    text-align: start;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }
+
+        .reverse {
+            @include flexbox(column-reverse, wrap, space-between, center);
+        }
+
+        .container__section {
+            background: none;
+            height: initial;
+    
+            h2 {
+                font-family: $montserrat;
+                font-size: 28px !important;
+                font-weight: 600;
+                text-align: center;
+            }
+    
+            .container__card {
+                margin: 0;
+                padding: 0;
+                position: initial;
+                transform: none;
+                @include flexbox(row, wrap, space-between, center);
+    
+                .card {
+                    position: initial;
+                    transform: none;
+                    width: 48% !important;
+                    padding: 0;
+                    @include flexbox(row, wrap, space-between, center);
+                    .card-image {
+                        position: initial;
+                        min-height: 100%;
+                        width: 100%;
+                        max-width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        transform: none;
+                    }
+                    h3 {
+                        color: $black;
+                        width: 100%;
+                        text-align: center !important;
+                        font-family: $montserrat;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+            }
+    
+            .container__card__team {
+                margin: 0;
+                padding: 0;
+                position: initial;
+                transform: none;
+                @include flexbox(row, wrap, space-between, center);
+    
+                .card {
+                    position: initial;
+                    transform: none;
+                    width: 48% !important;
+                    padding: 0;
+                    @include flexbox(row, wrap, space-between, center);
+                    .card-image {
+                        position: initial;
+                        min-height: 100%;
+                        width: 100%;
+                        max-width: 100%;
+                        margin: 0;
+                        padding: 0;
+                        transform: none;
+                    }
+                    h3 {
+                        color: $black;
+                        width: 100%;
+                        text-align: start !important;
+                        font-family: $montserrat;
+                        font-size: 12px;
+                        margin-left: 20px;
+                        font-weight: 700;
+                        margin-bottom: 5px;
+                    }
+                    h4 {
+                        color: $black;
+                        width: 100%;
+                        text-align: start !important;
+                        font-family: $montserrat;
+                        font-size: 11px;
+                        margin-left: 20px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .container__contact {
+        background: none;
+        background-color: $light-yellow;
+        height: initial;
+        position: initial;
+        margin: 0;
+        padding: 20px 20px;
+        @include flexbox(row, wrap, space-between, center);
+    
+        div {
+            position: initial;
+            transform: none;
+            color: $black;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            @include flexbox(row, wrap, space-between, center);
+    
+            a {
+                width: 30px;
+    
+                i {
+                    font-size: 26px;
+                }
+            }
+        }
+    
+        form {
+            width: 100%;
+            @include flexbox(row, wrap, space-between, center);
+            font-family: $inter;
+            gap: .5rem;
+    
+            .message {
+                width: 100% !important;
+                @include flexbox(row, wrap, space-between, center);
+                label {
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                    border-radius: 5px;
+                    outline: none;
+                }
+            }
+    
+            .group-input {
+                width: 40% !important;
+                position: initial;
+                transform: none;
+                color: $black;
+                margin: 0;
+                padding: 0;
+                @include flexbox(row, wrap, space-between, center);
+    
+                label {
+                    width: 100% !important;
+                }
+    
+                input {
+                    height: 30px;
+                    width: 100%;
+                    border-radius: 5px;
+                    outline: none;
+                    border: 1px solid $black;
+                }
+            }
+    
+            button {
+                width: 100% !important;
+                height: 40px;
+                background-color: $ford-blue;
+                color: $light-yellow;
+                outline: none;
+                border: none;
+                font-size: 20px;
+                border-radius: 5px;
             }
         }
     }

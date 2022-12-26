@@ -1,12 +1,12 @@
 @mixin flexbox($flexDirection, $flexWrap, $justifyContent, $alignItems) {
-    display: flex;
-    flex-direction: $flexDirection;
-    flex-wrap: $flexWrap;
-    justify-content: $justifyContent;
-    align-items: $alignItems;
+    display: flex !important;
+    flex-direction: $flexDirection !important;
+    flex-wrap: $flexWrap !important;
+    justify-content: $justifyContent !important;
+    align-items: $alignItems !important;
 }
 
 @mixin btn($border) {
-    padding: 10px 20px;
-    border: $border;
+    padding: 10px 20px !important;
+    border: $border !important;
 }
