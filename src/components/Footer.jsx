@@ -23,13 +23,13 @@ const Footer = () => {
             <h3>Menu</h3>
             <ul>
                 <li>
-                    <Link>Actualité</Link>
+                    <Link to="/news">Actualité</Link>
                 </li>
                 <li>
-                    <Link>Activités</Link>
+                    <Link to="/events">Activités</Link>
                 </li>
                 <li>
-                    <Link>A propos</Link>
+                    <Link to="/about">A propos</Link>
                 </li>
             </ul>
         </div>
