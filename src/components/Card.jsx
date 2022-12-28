@@ -4,9 +4,9 @@ import { GrLocation, GrFormCalendar } from "react-icons/gr";
 import { BiTime } from "react-icons/bi";
 import { Link } from 'react-router-dom';
 
-const Card = ({image, title, place, date, hour, key}) => {
+const Card = ({image, title, place, date, hour, key, id}) => {
   return (
-    <Link className="card" key={key}>
+    <Link to={`/events/${id}`} className="card" key={key}>
         <img src={image} alt={title} className="card-image"/>
         <h3 className="card-title">{title}</h3>
         <div className="card-footer">
