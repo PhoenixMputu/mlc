@@ -2,11 +2,9 @@ import React from 'react'
 import logo from '../assets/logo.gif'
 import '../css/navbar.scss'
 import { AiOutlineMenu } from "react-icons/ai"
-import { Link, useParams } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
-  const {id} = useParams();
-  console.log(id);
   return (
     <header className="header">
         <Link to='/' className='brand'><img src={logo} alt="Logo MLC" /></Link>
