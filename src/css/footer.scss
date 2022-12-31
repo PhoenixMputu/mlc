@@ -71,7 +71,7 @@ footer {
             font-family: $inter;
 
             li {
-                display: inline-block;
+                display: inline-block !important;
                 margin-bottom: 2rem;
                 align-items: baseline;
                 align-self: baseline;

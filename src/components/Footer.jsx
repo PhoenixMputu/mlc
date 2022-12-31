@@ -23,13 +23,13 @@ const Footer = () => {
             <h3>Menu</h3>
             <ul>
                 <li>
-                    <Link>Actualité</Link>
+                    <Link to="/news">Actualité</Link>
                 </li>
                 <li>
-                    <Link>Activités</Link>
+                    <Link to="/events">Activités</Link>
                 </li>
                 <li>
-                    <Link>A propos</Link>
+                    <Link to="/about">A propos</Link>
                 </li>
             </ul>
         </div>
@@ -37,10 +37,10 @@ const Footer = () => {
             <h3>Contacts</h3>
             <ul>
                 <li>
-                    <Link><AiOutlineMail className='icon' size={26} color="white"/>johndoe@gmail.com</Link>
+                    <Link to="mailto:victory23tshimbadi@gmail.com"><AiOutlineMail className='icon' size={26} color="white"/>johndoe@gmail.com</Link>
                 </li>
                 <li>
-                    <Link><BiPhone className='icon' size={26} color="white"/>+243811533644</Link>
+                    <Link to="tel:+243811533644"><BiPhone className='icon' size={26} color="white"/>+243811533644</Link>
                 </li>
             </ul>
             <div>

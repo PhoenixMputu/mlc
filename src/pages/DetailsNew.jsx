@@ -1,0 +1,39 @@
+import React from 'react'
+import Navbar from '../components/Navbar'
+import CardActivities from '../components/CardActuality'
+import '../css/detailsNew.scss'
+import bemba from '../assets/bemba.jpg'
+import { BiTime } from "react-icons/bi";
+import Footer from '../components/Footer'
+
+const DetailsNew = () => {
+  return (
+    <>
+        <Navbar/>
+        <section className="hero">
+          <img src={bemba} alt="Hero" />
+          <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h1>
+        </section>
+        <main className="details">
+          <div className="container">
+            <div className="head">
+              <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+              <div><BiTime size={20} color="black"/><p>Mercredi 1/11/2000</p></div>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptas velit tempora neque praesentium vero ipsa sapiente repellat quos earum voluptate, eum perspiciatis eos amet consequuntur perferendis, nihil commodi? Iste.</p>
+          </div>
+        </main>
+        <div className='container'>
+          <h2>Les dernières nouvelles</h2>
+          <div className="flex-row">
+            <CardActivities id="Hello" image={bemba} title="Lorem Ipsum" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat eos voluptatum nihil ipsum quod, velit saepe ducimus atque dolorum voluptatem quia itaque suscipit eum cupiditate minus, corporis delectus a."/>
+            <CardActivities id="Hello" image={bemba} title="Lorem Ipsum" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat eos voluptatum nihil ipsum quod, velit saepe ducimus atque dolorum voluptatem quia itaque suscipit eum cupiditate minus, corporis delectus a."/>
+            <CardActivities id="Hi" image={bemba} title="Lorem Ipsum" description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam placeat eos voluptatum nihil ipsum quod, velit saepe ducimus atque dolorum voluptatem quia itaque suscipit eum cupiditate minus, corporis delectus a."/>
+          </div>
+        </div>
+        <Footer/>
+    </>
+  )
+}
+
+export default DetailsNew
