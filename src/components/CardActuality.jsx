@@ -9,7 +9,7 @@ const CardActuality = ({image, title, description, key, id}) => {
         <img src={image} alt={title} className="card-image"/>
         <h3 className="card-title">{title}</h3>
         <p className='description'>{description}</p>
-        <button>Lire plus</button>
+        <button>Voir plus</button>
     </Link>
   )
 }
