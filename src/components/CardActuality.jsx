@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import '../css/card.scss';
 
 const CardActuality = ({image, title, description, key, id}) => {
-  console.log(id);
   return (
     <Link to={`/news/${id}`} className="card" key={key}>
         <img src={image} alt={title} className="card-image"/>

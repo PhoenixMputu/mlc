@@ -1,0 +1,76 @@
+@import 'colors';
+@import 'fonts';
+@import 'mixin';
+
+.container__login {
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(207, 198, 198);
+    position: relative;
+
+    form {
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: $montserrat;
+            text-transform: uppercase
+        }
+
+        .group-input {
+            @include flexbox(row, wrap, space-between, center);
+            gap: .5rem;
+
+            label {
+                width: 100%;
+                font-family: $montserrat;
+            }
+
+            input {
+                height: 40px;
+                width: 100%;
+                margin-bottom: 10px;
+                border: 1px solid $black;
+                padding-left: 10px;
+            }
+        }
+
+        .group__links {
+            @include flexbox(row, wrap, space-between, center);
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: $ford-blue;
+            border: none;
+            color: $light-yellow;
+            font-family: $inter;
+            font-weight: 500;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container__login {
+        form {
+            width: 80%;
+
+            .group__links {
+                a {
+                    font-size: 13px !important;
+                }
+            }
+        }
+    }
+}
