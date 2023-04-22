@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    overflow-x: scroll;
+
+    thead {
+        background-color: rgb(212, 202, 202);
+    }
+
+    tbody {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+        border-collapse: collapse;
+    }
+
+    tr:hover {
+        background-color: honeydew;
+        cursor: pointer;
+        border-collapse: collapse;
+    }
+
+    .action {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+}

@@ -7,8 +7,13 @@ import Events from './pages/Events'
 import About from './pages/About'
 import DetailsNew from './pages/DetailsNew'
 import EventsDetails from './pages/EventsDetails'
-import Register from './pages/Register'
+import ForgetPassword from './pages/ForgetPassword'
 import Login from './pages/Login'
+import Dashboard from './pages/Dashboard';
+import ListActivities from './pages/ListActivities';
+import ListArticles from './pages/ListArticles';
+import AddNew from './pages/AddNew';
+import AddEvent from './pages/AddEvent'
 
 function App() {
 	return (
@@ -21,7 +26,12 @@ function App() {
 				<Route path="/events/:id" element={<EventsDetails />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/admin" element={<Login />} />
-				<Route path="/admin/register" element={<Register />} />
+				<Route path="/admin/forget" element={<ForgetPassword />} />
+				<Route path="/admin/dashboard" element={<Dashboard />} />
+				<Route path="/admin/event" element={<ListActivities />} />
+				<Route path="/admin/news" element={<ListArticles />} />
+				<Route path="/admin/addNew" element={<AddNew />} />
+				<Route path="/admin/addEvent" element={<AddEvent />} />
 			</Routes>
 		</BrowserRouter>
 	);

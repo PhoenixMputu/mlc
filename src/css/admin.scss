@@ -34,12 +34,17 @@
                 font-family: $montserrat;
             }
 
-            input {
+            input, textarea {
                 height: 40px;
                 width: 100%;
                 margin-bottom: 10px;
                 border: 1px solid $black;
                 padding-left: 10px;
+            }
+
+            input[type="file"] {
+                width: max-content !important;
+                border: none
             }
         }
 

@@ -7,3 +7,136 @@
 li {
   list-style: none;
 }
+
+#content {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+#content div {
+  width: 43%;
+}
+
+#content div h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+#searchBar {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  margin: 2rem auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+}
+
+#searchBar input {
+  outline: none;
+  border: none;
+  width: 250px;
+}
+
+#searchBar button {
+  border: none;
+  background: none;
+}
+
+#activities {
+  margin: 3rem 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+}
+
+#activities h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+}
+
+#activities .lien {
+  padding: .5rem 1rem;
+  background-color: rgb(13, 79, 246);
+  color: #fff;
+}
+
+#formulaire {
+  width: 40%;
+  margin: 3rem auto;
+}
+
+#formulaire h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#formulaire .form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: .5rem;
+}
+
+#formulaire .form-group label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#formulaire .form-group input, #formulaire .form-group textarea {
+  padding: .5rem;
+  font-size: 16px !important;
+}
+
+#formulaire .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#formulaire .flex div {
+  width: 44%;
+}
+
+#formulaire input[type="submit"] {
+  width: 100%;
+  padding: .7rem 0;
+  text-align: center;
+  cursor: pointer;
+  background-color: blue;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: yellow;
+}
+
+@media screen and (max-width: 600px) {
+  #content div {
+    width: 100%;
+  }
+
+  #activities {
+    margin: 3rem 1rem;
+  }
+
+  #formulaire {
+    width: 80%;
+    margin: 3rem auto;
+  }
+}
