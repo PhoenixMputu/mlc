@@ -14,7 +14,7 @@ const Home = () => {
     <section>
         <div>
             <h1>Bienvenu sur le site officiel du <span>MLC</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum accusamus impedit ipsam natus cumque earum sunt quos rerum harum cupiditate sed voluptate nemo tempora, reprehenderit commodi omnis quas amet eligendi?</p>
+            <p>Le Mouvement pour le Changement (MLC) est le mouvement qui vous permettra de voir un avenir meilleur. Joignez-vous à nous! Engagez-vous pour un changement positif pour notre pays et pour notre monde</p>
             <Link>En savoir plus</Link>
         </div>
     </section>
@@ -23,7 +23,7 @@ const Home = () => {
         <img src={bemba} alt="Jean-Pierre Mbemba" />
         <div>
           <h2>Un avenir meilleur pour un Congo meilleur</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu efficitur odio. Phasellus suscipit feugiat dolor, et iaculis massa lacinia consequat.</p>
+          <p>Avec le MLC, votre voix compte ! Réunissons-nous et travaillons ensemble pour bâtir un meilleur futur. Ensemble, nous pouvons être les acteurs du changement et contribuer à construire une société plus juste, plus solidaire et plus durable. Rejoignez le MLC et donnez-lui votre soutien maintenant !</p>
           <Link>En savoir plus</Link>
         </div>
       </div>

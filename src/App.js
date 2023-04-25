@@ -1,4 +1,3 @@
-import React from 'react'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
@@ -16,6 +15,7 @@ import AddNew from './pages/AddNew';
 import AddEvent from './pages/AddEvent'
 
 function App() {
+
 	return (
 		<BrowserRouter>
 			<Routes>

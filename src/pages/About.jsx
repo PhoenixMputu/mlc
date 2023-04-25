@@ -20,15 +20,15 @@ const About = () => {
                 <img src={bemba} alt="Jean-pierre Mbemba" />
                 <div>
                     <h2>Notre vision</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit tenetur natus nesciunt quis eligendi aliquid ea rem veritatis sequi ipsam pariatur provident, obcaecati voluptatum eum repudiandae labore nostrum doloribus dignissimos.</p>
+                    <p>La vision du MLC (Mouvement de Libération des Citoyens) est de promouvoir la liberté, la démocratie et la justice pour tous les citoyens. Il s'efforce également de promouvoir une société qui respecte les droits de l'homme et où tous les citoyens peuvent exercer leurs droits sans discrimination. Le MLC cherche à encourager les citoyens à participer à la vie politique et à s'impliquer dans la prise de décision.</p>
                 </div>
             </section>
             <section className='container__section'>
                 <h2>Nos valeurs</h2>
                 <div className="container__card">
                     <div className="card">
-                        <img src="https://previews.123rf.com/images/tashalex/tashalex1508/tashalex150800150/44104439-independence-concept-de-carte-de-jour-avec-la-libert%C3%A9-statue-vector-illustration.jpg" alt="Indépendance" className="card-image" />
-                        <h3>Indépendance</h3>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIMZyoSplr0u8iz9Za0KeILNL2jaz1e_hzXw&usqp=CAU" alt="Indépendance" className="card-image" />
+                        <h3>La démocratie</h3>
                     </div>
                     <div className="card">
                         <img src="https://thumbs.dreamstime.com/z/%C3%A9chelles-avec-l-illustration-de-signe-d-%C3%A9galit%C3%A9-112759508.jpg" alt="" className="card-image" />
@@ -40,14 +40,14 @@ const About = () => {
                     </div>
                     <div className="card">
                         <img src="https://thumbs.dreamstime.com/z/%C3%A9chelles-avec-l-illustration-de-signe-d-%C3%A9galit%C3%A9-112759508.jpg" alt="" className="card-image" />
-                        <h3>Justice</h3>
+                        <h3>Sécurité et paix</h3>
                     </div>
                 </div>
             </section>
             <section className='flex-row reverse'>
                 <div>
                     <h2>Notre mission</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit tenetur natus nesciunt quis eligendi aliquid ea rem veritatis sequi ipsam pariatur provident, obcaecati voluptatum eum repudiandae labore nostrum doloribus dignissimos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit tenetur natus.</p>
+                    <p>Le Mouvement pour le Leadership Changé (MLC) a pour objectif de redonner du pouvoir aux citoyens et de permettre à chacun de devenir un leader positif et responsable. Le MLC promeut une forme de leadership basée sur l'écoute des autres, le travail collaboratif et le respect des autres. Il cherche à encourager des comportements proactifs et responsables qui sont à l'origine de véritables changements sociaux et économiques. Cette vision s'appuie également sur la collaboration et le partage des ressources entre les divers groupes et organisations.</p>
                 </div>
                 <img src={objectif} alt="Jean-pierre Mbemba" />
             </section>
@@ -65,9 +65,9 @@ const About = () => {
                         <h4>Sécretaire Générale</h4>
                     </div>
                     <div className="card">
-                        <img src="https://information.tv5monde.com/sites/info.tv5monde.com/files/styles/large/public/assets/images/bemba.jpg?itok=7djby2Uj" alt="Indépendance" className="card-image" />
-                        <h3>Jean-Pierre Mbemba</h3>
-                        <h4>Fondateur</h4>
+                        <img src="https://pbs.twimg.com/media/EXTMr-_X0AEQicC.jpg" alt="Indépendance" className="card-image" />
+                        <h3>Aldarich Luboyo</h3>
+                        <h4>Président League de Jeunes</h4>
                     </div>
                     <div className="card">
                         <img src="https://information.tv5monde.com/sites/info.tv5monde.com/files/styles/large/public/assets/images/bemba.jpg?itok=7djby2Uj" alt="Indépendance" className="card-image" />

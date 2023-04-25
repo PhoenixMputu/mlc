@@ -1,7 +1,19 @@
 import Header from "../components/Header"
 import '../css/admin.scss'
+import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom'
 
 const AddNew = () => {
+    let navigate = useNavigate();
+    let token = localStorage.getItem('user');
+    const [user, setUser] = useState();
+
+    useEffect(() => {
+        setUser(token);
+        if (user === null) {
+            navigate('/admin');
+        }
+    }, [token, user])
     return (
         <>
             <Header/>

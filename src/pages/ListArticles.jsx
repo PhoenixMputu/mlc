@@ -2,8 +2,21 @@ import Header from "../components/Header"
 import { AiOutlineSearch } from "react-icons/ai";
 import {Link }from "react-router-dom"
 import Table from "../components/Table";
+import { useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom'
 
 const ListArticles = () => {
+    let navigate = useNavigate();
+    let token = localStorage.getItem('user');
+    const [user, setUser] = useState();
+
+    useEffect(() => {
+        setUser(token);
+        if (user === null) {
+            navigate('/admin');
+        }
+    }, [token, user])
+    
     const data = [
         {
             id: 1,

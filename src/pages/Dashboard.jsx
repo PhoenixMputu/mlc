@@ -1,7 +1,21 @@
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Table from "../components/Table";
+import { useNavigate } from 'react-router-dom'
 
 const Dashboard = () => {
+    let navigate = useNavigate();
+    let token = localStorage.getItem('user');
+    const [user, setUser] = useState();
+
+    useEffect(() => {
+        setUser(token);
+        if (user === null) {
+            navigate('/admin');
+        }
+    }, [token, user])
+
+
     const data = [
         {
             id: 1,
